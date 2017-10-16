@@ -25,10 +25,13 @@ let canvas = Canvas(width: 500, height: 500)
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
 for x in stride(from: 25, through: 475, by: 50){
-    
-    canvas.drawEllipse(centreX: x, centreY: 475, width: 20, height: 20)
+    for y in stride(from: 475, through: 25, by: -50){
+        canvas.fillColor = Color.black
+        canvas.drawEllipse(centreX: x, centreY: y, width: 30, height: 30)
+        canvas.fillColor = Color.white
+        canvas.drawEllipse(centreX: x+25, centreY: y+25, width: 30, height: 30, borderWidth: 2)
 }
-
+}
 /*:
  ## Use source control
  To keep your work organized, and receive feedback, source control is a must.
