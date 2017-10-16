@@ -13,7 +13,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 400, height: 300)
+let canvas = Canvas(width: 500, height: 500)
 
 /*:
  ## Add your code below
@@ -24,7 +24,10 @@ let canvas = Canvas(width: 400, height: 300)
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
 
-
+for x in stride(from: 25, through: 475, by: 50){
+    
+    canvas.drawEllipse(centreX: x, centreY: 475, width: 20, height: 20)
+}
 
 /*:
  ## Use source control
