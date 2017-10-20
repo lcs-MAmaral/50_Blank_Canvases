@@ -31,13 +31,13 @@ for x in stride(from: 25, through: 475, by: 50){
         canvas.drawEllipse(centreX: x, centreY: y, width: 30, height: 30)
         
         if location == 1 {
-            canvas.fillColor = Color.white
+            canvas.fillColor = Color.green
             canvas.drawEllipse(centreX: x, centreY: y+25, width: 30, height: 30, borderWidth: 2)
         } else if location == 2  {
-            canvas.fillColor = Color.white
+            canvas.fillColor = Color.purple
             canvas.drawEllipse(centreX: x+25, centreY: y, width: 30, height: 30, borderWidth: 2)
         } else if location == 3  {
-            canvas.fillColor = Color.white
+            canvas.fillColor = Color.orange
             canvas.drawEllipse(centreX: x, centreY: y-25, width: 30, height: 30, borderWidth: 2)
         } else if location == 4 {
             canvas.fillColor = Color.white

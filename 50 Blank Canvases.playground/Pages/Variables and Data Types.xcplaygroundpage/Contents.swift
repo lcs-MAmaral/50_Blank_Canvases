@@ -23,7 +23,8 @@ let canvas = Canvas(width: 400, height: 300)
  Use whitespace and comments as appropriate.
  */
 // Replace this comment with your first comment – what is the goal of the code you're about to write?
-
+var name = "Matthew"
+let anothername = "Annie"
 
 
 /*:
